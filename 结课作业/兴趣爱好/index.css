@@ -1,0 +1,163 @@
+
+.ul,li{
+    height: 100%;
+}
+
+/* 定义凝胶布局 */
+.inner
+{
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    
+}
+/* 定义导航栏的字体位置 */
+nav{
+    width: 100%;
+    background-color: #f56134;
+    height: 50px;
+
+    /* 导航栏运用fixed定位，相对于浏览器页面永远固定 */
+    position: fixed;    
+    /* 导航栏使用了fixed定位，有可能被其他float元素遮挡，将堆叠顺序提高，防止被覆盖 */
+    z-index: 999;
+}
+
+/* 导航栏的按钮右对齐 */
+nav ul{
+    text-align: right;
+    height: 100%;
+    /* margin-right: 150px; */
+}
+
+/* 导航栏列表横向排列*/
+nav ul li{
+    display: inline-block;
+    text-decoration: none; 
+    width: 80px;
+    vertical-align: middle;
+    text-align: center;
+}
+
+/*导航栏文字*/
+nav ul li a{
+    display: block; 
+    text-decoration: none;
+    /* vertical-align: bottom; */
+    text-align: center;
+    height: 100%;
+    line-height: 50px;
+    color: rgb(0, 0, 0);
+}
+
+/* 导航栏的图标样式 */
+.navicon{
+    display: inline;
+    float: left;
+    height: 100%;
+}
+
+/* 导航语 */
+.navigation{
+    line-height: 50px;
+    display: inline;
+    float: left;
+    margin-left: 10px;
+    font-size: 18px;
+    color: white;
+}
+
+/* 指定单元格边界距离 */
+table{
+    border-spacing: 0;
+}
+
+/* 给右边页面设置样式 */
+#rightpage{
+    margin-left: 200px;
+    padding-left: 20px;
+    /* background-color: white; */
+}
+
+/* 定义表格列边框 */
+.coursetable td,.studytable td{
+    border: 1px solid black;
+    border-spacing: 0;
+}
+
+/* 定义表格行边框 */
+table tr{
+    border: 1px solid black;
+    border-spacing: 0;
+}
+
+/* 用来规定表格的样式 */
+.studytable{
+    border: 1px solid black;
+    width: 1000px;
+}
+
+
+
+/* 定义侧边栏宽度和向左浮动 */
+.side{
+    float: left;
+    width: 300px;
+}
+
+.side_title{
+    border: 2px solid rgba(250, 248, 182, 0.879);
+    width: 220px;
+}
+
+.intro_block{
+    height: 400px;
+    width: 220px;
+    border: 2px solid rgba(250, 248, 182, 0.879);
+}
+
+.introduction{
+    width: 200px;
+    height: 190px;
+    text-indent: 2em;
+    text-align: left;
+    padding-top: 10px;
+}
+
+/* 主内容区 */
+.main{
+    background-color:blanchedalmond;
+}
+
+footer{
+    background-color: #b3d6e2;
+    position: relative;
+    width: 100%;
+}
+
+/* 定义页脚区总容器 */
+.footer-container{
+    background-color: #c5daf1;
+    position: relative;
+    /* 遮挡住溢出的元素 */
+    overflow:auto;
+
+    /* 也是一种凝胶布局 */
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* 定义页脚的列 */
+.footer-col{
+    position: relative;
+    width: 370px;
+    margin-right: 60px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    /* padding-left: 20px; */
+    float:left;
+}
+
+
